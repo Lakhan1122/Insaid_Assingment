@@ -1,0 +1,158 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSn1l43rMgdwBDSoU4AKxzIpALWjRKaxarZMgyQCjSw&s');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #fff;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #eee;
+}
+
+.services {
+  margin-top: 50px;
+}
+
+.services h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.services li {
+  margin-bottom: 30px;
+}
+
+.services h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.services p {
+  font-size: 
+  18px;
+  line-height: 1.5;
+}
+@media screen and (max-width: 768px) {
+  /* styles for screens smaller than 768px */
+  header {
+    padding: 10px 20px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav li {
+    display: block;
+    margin: 10px 0;
+  }
+  .hero-image {
+    height: 200px;
+    background-position: center;
+    background-size: cover;
+  }
+  .services {
+    flex-direction: column;
+  }
+  .service {
+    margin: 20px 0;
+  }
+  .service img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  /* styles for screens larger than 768px */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+  }
+  nav ul {
+    display: flex;
+  }
+  nav li {
+    margin: 0 20px;
+  }
+  .hero-image {
+    height: 400px;
+    background-position: left;
+    background-size: cover;
+  }
+  .services {
+    display: flex;
+    justify-content: space-between;
+  }
+  .service {
+    flex-basis: 30%;
+    margin: 0;
+  }
+  .service img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
