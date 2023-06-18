@@ -7,7 +7,7 @@ The website was built using the following technologies:
 
 HTML
 CSS
-JavaScript
+JavaScript.
 ## Features
 The website includes the following features:
 
